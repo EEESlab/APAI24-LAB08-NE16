@@ -9,8 +9,8 @@ from PIL import Image
 import numpy as np
 
 
-CAL_DATASET = "/home/pulpbox/gap_sdk_private/examples/gap9/nn/nntool/mnist_dataset/calibration/*"
-TEST_DATASET = "/home/pulpbox/gap_sdk_private/examples/gap9/nn/nntool/mnist_dataset/test/*"
+CAL_DATASET = "/opt/gap_sdk/examples/gap9/nn/nntool/mnist_dataset/calibration/*"
+TEST_DATASET = "/opt/gap_sdk/examples/gap9/nn/nntool/mnist_dataset/test/*"
 
 def preprocessing(img_arr):
     return (img_arr - 127.5) / 127.5
